@@ -4,16 +4,14 @@ print("--- Welcome to 21 Boom! 🃏 ---")
 
 
 p1_total = 0
-print("--- PLAYER 1'S TURN ---")
+print("--- FIRST PLAYER'S TURN ---")
 
 for _ in range(2):
     suit = random.choice(["❤️", "♦️", "♣️", "♠️"])
     card = random.choice([2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'])
 
-    if card == 'A':
-        val = 1
-    elif card == 'J' or card == 'Q' or card == 'K':
-        val = 10
+    if card == 'A': val = 1
+    elif card == 'J' or card == 'Q' or card == 'K': val = 10
     else:
         val = card
 
@@ -30,10 +28,8 @@ for _ in range(10):
     suit = random.choice(["❤️", "♦️", "♣️", "♠️"])
     card = random.choice([2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'])
 
-    if card == 'A':
-        val = 1
-    elif card == 'J' or card == 'Q' or card == 'K':
-        val = 10
+    if card == 'A': val = 1
+    elif card == 'J' or card == 'Q' or card == 'K': val = 10
     else:
         val = card
 
@@ -45,15 +41,13 @@ for _ in range(10):
         break
 
 p2_total = 0
-print("\n--- PLAYER 2'S TURN ---")
+print("--- SECOND PLAYER'S TURN ---")
 for _ in range(2):
     suit = random.choice(["❤️", "♦️", "♣️", "♠️"])
     card = random.choice([2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'])
 
-    if card == 'A':
-        val = 1
-    elif card == 'J' or card == 'Q' or card == 'K':
-        val = 10
+    if card == 'A': val = 1
+    elif card == 'J' or card == 'Q' or card == 'K': val = 10
     else:
         val = card
 
@@ -70,10 +64,8 @@ for _ in range(10):
     suit = random.choice(["❤️", "♦️", "♣️", "♠️"])
     card = random.choice([2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'])
 
-    if card == 'A':
-        val = 1
-    elif card == 'J' or card == 'Q' or card == 'K':
-        val = 10
+    if card == 'A': val = 1
+    elif card == 'J' or card == 'Q' or card == 'K': val = 10
     else:
         val = card
 
@@ -84,7 +76,7 @@ for _ in range(10):
     if p2_total >= 21:
         break
 
-print("\n--- FINAL SCORE ---")
+print("--- FINAL SCORE ---")
 print(f"P1: {p1_total} | P2: {p2_total}")
 
 if p1_total > 21 and p2_total > 21:
